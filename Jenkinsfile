@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        maven 'Maven'
+    }
     environment {
         SERVICE = 'gateway'
         NAME = "rmcardosoo/${SERVICE}"
